@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Portfolio</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Floating Action Button for PDF generation (hidden in print) -->
+    <button id="print-btn" class="no-print tooltip">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span class="tooltiptext">Save as PDF</span>
+    </button>
+
+    <nav class="navbar no-print">
+        <div class="nav-content">
+            <div class="logo">SE.<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#journal">Reflective Journal</a></li>
+                <li><a href="#career">Career Plan</a></li>
+                <li><a href="#cv">Curriculum Vitae</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        
+        <!-- SECTION 1: INTRODUCTION -->
+        <section id="intro" class="section glass-panel fade-in section-page">
+            <div class="section-content split-layout">
+                <div class="text-content">
+                    <h1 class="gradient-text">Hello, I'm <br>[Your Name]</h1>
+                    <h3 class="subtitle">Final Year Software Engineering Undergraduate</h3>
+                    <p class="bio">
+                        [Insert your personal introduction here. Example: I am a passionate software engineering student specializing in full-stack development and cloud architecture. With a strong foundation in modern web technologies and a keen eye for design, I strive to build scalable, efficient, and user-centric applications. This portfolio reflects my academic journey, professional reflections, and career aspirations.]
+                    </p>
+                    <div class="contact-badges">
+                        <span class="badge"><i class="fa-solid fa-envelope"></i> [your.email@example.com]</span>
+                        <span class="badge"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/[username]</span>
+                        <span class="badge"><i class="fa-brands fa-github"></i> github.com/[username]</span>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="image-frame">
+                        <img src="assets/profile.png" alt="Profile Picture" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: REFLECTIVE JOURNAL -->
+        <section id="journal" class="section glass-panel fade-in section-page multi-page">
+            <h2 class="section-title">Reflective Journal <span class="light-text">| PPW Module</span></h2>
+            <p class="section-desc">A reflection on the core concepts learned during the Preparing for Professional World (PPW) lectures.</p>
+            
+            <div class="timeline">
+                
+                <!-- Topic 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1. Professional Presentation Skills</h3>
+                        <p><strong>Reflections on Effective Presentations:</strong> Designing impactful slides requires visual balance. A common trap is text stuffing; instead, one must use interesting visual aids that don't distract. The presenter remains the critical element—there must be a seamless match between the slide content and the spoken words.</p>
+                        <ul>
+                            <li><strong>Concluding:</strong> Always provide a strong closing message rather than an abrupt end.</li>
+                            <li><strong>Handling Q&A:</strong> Utilize a dedicated slide to signal transitions, maintaining visual aids to support answers.</li>
+                            <li><strong>References:</strong> Consistently include references for any research presented.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>2. Professional Interview Etiquette</h3>
+                        <p><strong>Bridging the Gap in Remote Interviews:</strong> Remote interviews demand the same level of preparation as face-to-face ones. Professional attire is mandatory. Punctuality is achieved by settling in 10 minutes early to ensure the technical setup is flawless.</p>
+                        <ul>
+                            <li><strong>Communication:</strong> Apply the "Small Gap" rule—pause briefly after questions to prevent internet-lag interruptions.</li>
+                            <li><strong>Transparency:</strong> Be technically transparent; inform interviewers immediately of audio issues.</li>
+                            <li><strong>Closing:</strong> Always express gratitude and follow up on the next steps.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>3. Skills Development & Communication</h3>
+                        <p><strong>Practice and Etiquette:</strong> Confidence stems from practice. Role-playing with peers is a proven method to simulate professional call pressure. Communication etiquette, especially telephone skills, emphasizes professional introductions and the courtesy of updating hosts regarding delays.</p>
+                    </div>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>4. Professional Report Writing</h3>
+                        <p><strong>Focus and Objectivity:</strong> Workplace reports must maintain a strictly objective tone. Personal conflicts must be excluded or handled with professional distance. The primary focus is providing the audience with targeted, relevant information.</p>
+                        <ul>
+                            <li><strong>Structure:</strong> Complex data, graphs, and large tables belong in Appendices to maximize the main document's fluidity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Topic 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>5. Formal Email & Memo Writing</h3>
+                        <p><strong>Modern Correspondence:</strong> Emails are efficient, cost-effective, and historically crucial (as seen during the pandemic). Memos remain vital for reliable internal communications and organizational documentation.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: CAREER DEVELOPMENT PLAN -->
+        <section id="career" class="section glass-panel fade-in section-page">
+            <h2 class="section-title">Career Development Plan</h2>
+            <div class="career-grid">
+                
+                <div class="career-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-bullseye card-icon target-icon"></i>
+                        <h3>Short-term Goals (1-2 Years)</h3>
+                    </div>
+                    <ul class="styled-list">
+                        <li>[Graduate with First-Class Honors in Software Engineering.]</li>
+                        <li>[Secure a Junior Software Engineer position at a reputed tech company.]</li>
+                        <li>[Gain full-stack proficiency, particularly in React and Node.js.]</li>
+                        <li>[Contribute to at least two open-source projects.]</li>
+                    </ul>
+                </div>
+
+                <div class="career-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-rocket card-icon rocket-icon"></i>
+                        <h3>Mid-term Goals (3-5 Years)</h3>
+                    </div>
+                    <ul class="styled-list">
+                        <li>[Transition into a Senior Software Engineer / Tech Lead role.]</li>
+                        <li>[Obtain professional cloud certifications (e.g., AWS Solutions Architect).]</li>
+                        <li>[Mentor junior developers and lead Agile sprints.]</li>
+                        <li>[Specialize in system architecture and scalable design.]</li>
+                    </ul>
+                </div>
+
+                <div class="career-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-earth-americas card-icon globe-icon"></i>
+                        <h3>Long-term Goals (5+ Years)</h3>
+                    </div>
+                    <ul class="styled-list">
+                        <li>[Become a Principal Software Engineer or Software Architect.]</li>
+                        <li>[Drive technical innovation and strategy for a major organization.]</li>
+                        <li>[Potentially start an independent tech consultancy or startup.]</li>
+                    </ul>
+                </div>
+
+                <div class="career-card full-width">
+                     <div class="card-header">
+                        <i class="fa-solid fa-gears card-icon gear-icon"></i>
+                        <h3>Action Plan & Skill Acquisition</h3>
+                    </div>
+                    <div class="action-flex">
+                        <div class="action-item">
+                            <h4>Technical Skilling</h4>
+                            <p>[Allocate 10 hours weekly to master advanced cloud deployments and modern framework architectures via practical projects.]</p>
+                        </div>
+                        <div class="action-item">
+                            <h4>Networking</h4>
+                            <p>[Attend tech meetups, actively participate in LinkedIn tech communities, and build relationships with industry professionals.]</p>
+                        </div>
+                        <div class="action-item">
+                            <h4>Soft Skills</h4>
+                            <p>[Continuously apply the communication, email, and presentation etiquette learned in the PPW module within professional environments.]</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: CURRICULUM VITAE -->
+        <section id="cv" class="section glass-panel fade-in section-page">
+            <div class="cv-header">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <a href="#" class="btn-primary no-print"><i class="fa-solid fa-download"></i> Download Original CV</a>
+            </div>
+            
+            <div class="cv-container">
+                <div class="cv-sidebar">
+                    <h3>Skills</h3>
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-tags">
+                            <span>[Java]</span> <span>[Python]</span> <span>[JavaScript]</span> <span>[C++]</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Web Technologies</h4>
+                        <div class="skill-tags">
+                            <span>[React]</span> <span>[Node.js]</span> <span>[HTML/CSS]</span> <span>[Express]</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Databases & Cloud</h4>
+                        <div class="skill-tags">
+                            <span>[MySQL]</span> <span>[MongoDB]</span> <span>[AWS]</span> <span>[Docker]</span>
+                        </div>
+                    </div>
+
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>BSc (Hons) in Software Engineering</h4>
+                        <p class="inst">[SLIIT / University Name]</p>
+                        <p class="date">[2020 - 2024]</p>
+                        <p class="gpa">GPA: [3.8/4.0]</p>
+                    </div>
+                </div>
+
+                <div class="cv-main">
+                    <h3>Professional Experience</h3>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>[Software Engineering Intern]</h4>
+                            <span class="exp-date">[Jun 2023 - Dec 2023]</span>
+                        </div>
+                        <p class="exp-company">[Tech Company Name, City]</p>
+                        <ul class="exp-list">
+                            <li>[Developed and maintained RESTful APIs using Node.js and Express.]</li>
+                            <li>[Collaborated with the QA team to increase code coverage by 25%.]</li>
+                            <li>[Assisted in migrating legacy systems to cloud-based architectures.]</li>
+                        </ul>
+                    </div>
+
+                    <h3>Key Projects</h3>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>[Final Year Research Project]</h4>
+                        </div>
+                        <p class="exp-desc">[A brief description of your main software project, e.g., A machine learning-powered web application designed to predict... Built using React, Python FastAPI, and PostgreSQL.]</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>[E-Commerce Platform Setup]</h4>
+                        </div>
+                        <p class="exp-desc">[Developed a full-stack e-commerce solution with integrated payment gateways and user authentication. Technologies: MERN Stack.]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: CERTIFICATE -->
+        <section id="certificate" class="section glass-panel fade-in section-page">
+            <h2 class="section-title">Certification</h2>
+            <p class="section-desc">Proof of continuous learning and skill improvement.</p>
+            
+            <div class="cert-display">
+                <div class="cert-info">
+                    <h3>[Certificate Title e.g., AWS Certified Cloud Practitioner]</h3>
+                    <p class="cert-issuer">Issued by: <strong>[Issuing Organization e.g., Amazon Web Services]</strong></p>
+                    <p class="cert-date">Date attained: <strong>[Month, Year]</strong></p>
+                    <p class="cert-desc">
+                        [This certification validates overall understanding of the AWS Cloud platform, covering basic cloud concepts, security, and architecture. It demonstrates my commitment to improving my technical skill set outside of standard university curriculum.]
+                    </p>
+                </div>
+                <div class="cert-image-container">
+                    <img src="assets/certificate.png" alt="Certificate of Completion" class="cert-img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer no-print">
+        <p>&copy; 2024 [Your Name]. Created for PPW Portfolio Submission.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
