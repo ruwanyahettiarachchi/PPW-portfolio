@@ -55,14 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 4. Fallback if user uses the Download CV button in CV section
-    const downloadCvBtn = document.querySelector('.cv-header .btn-primary');
-    if (downloadCvBtn) {
-        downloadCvBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Just triggers print as well, or you could link it directly to a static PDF file
-            window.print();
-        });
-    }
+
 
 });
